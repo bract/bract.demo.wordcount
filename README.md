@@ -15,7 +15,7 @@ $ lein do clean, uberjar
 $ echo "A quick brown fox" | java -jar target/uberjar/bract.demo.wordcount-0.1.0-SNAPSHOT-standalone.jar -vf config.edn
 ```
 
-Alternatively, you may like run it as follows:
+Alternatively, you may like to run it as follows:
 
 ```shell
 $ echo "A quick brown fox" | lein do clean, run -vf config.edn
