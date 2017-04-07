@@ -1,0 +1,2 @@
+{"bract.core.workers" ["bract.demo.wordcount.init/start"]
+ "stop-words" ["A" "a" "An" "an" "The" "the"]}
