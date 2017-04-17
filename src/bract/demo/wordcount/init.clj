@@ -15,7 +15,7 @@
 
 (defn start
   "Entry point for Bract to call."
-  [seed]
-  (let [config     (config/seed-bract-cfg seed)
-        stop-words (config/cfg-stop-words config)] (println "start")
+  [context]
+  (let [config     (config/ctx-bract-cfg  context)
+        stop-words (config/cfg-stop-words config)]
     (core/print-word-count stop-words)))

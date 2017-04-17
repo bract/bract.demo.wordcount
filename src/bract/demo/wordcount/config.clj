@@ -13,5 +13,5 @@
 
 
 (keypin/defkey
-  seed-bract-cfg  [:bract.core/config map? "Config read by Bract"]
+  ctx-bract-cfg  [:bract.core/config map? "Config read by Bract"]
   cfg-stop-words ["stop-words" (every-pred vector? (partial every? string?)) "Vector of stop words"])
