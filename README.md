@@ -1,6 +1,6 @@
 # bract.demo.wordcount
 
-A minimal command-line demo app for the Bract framework. The problem statement this app solves is as follows:
+A minimal demo command-line app for the Bract framework. The problem statement this app solves is as follows:
 
 - Count and report the number of words in a given text passed via STDIN.
 - Exclude the configured stop words from the count.
