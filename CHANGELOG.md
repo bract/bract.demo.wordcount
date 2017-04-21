@@ -5,3 +5,6 @@
 
 - Implement word count
 - Exclude configured stop words
+- Automated tests
+  - Using example input
+  - Using external config

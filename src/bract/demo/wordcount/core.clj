@@ -21,7 +21,11 @@
             (reduce (fn [m word]
                       (update m (if (contains? stop-set word) :stop-word-count :word-count) inc))
               kvs
-              (string/split each-line #"\s+")))
+              (->> (string/split each-line #"\s+")
+                (mapcat #(string/split % #"\."))
+                (filter seq)
+                (mapcat #(string/split % #"\,"))
+                (filter seq))))
     {:word-count 0
      :stop-word-count 0}
     lines))
