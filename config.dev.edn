@@ -1,3 +1,4 @@
 {"parent" ["config.edn"]
- "bract.core.inducers" [bract.core.inducer/config-hook!]
+ "bract.core.inducers" [bract.core.inducer/config-hook!
+                        bract.core.dev/record-deinit!]
  "bract.core.config-hook" bract.demo.wordcount.test-init/update-config!}

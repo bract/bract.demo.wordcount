@@ -12,4 +12,7 @@
                  [bract/bract.core "0.1.0-SNAPSHOT"]]
   :main ^:skip-aot bract.core.main
   :target-path "target/%s"
-  :profiles {:uberjar {:aot [bract.core.main]}})
+  :profiles {:dev {:dependencies [[org.clojure/tools.namespace "0.2.11"]]
+                   :source-paths ["dev"]}
+             :uberjar {:aot [bract.core.main]}})
+
