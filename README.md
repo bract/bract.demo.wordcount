@@ -8,6 +8,8 @@ A minimal demo command-line app for the Bract framework. The problem statement t
 
 ## Usage
 
+### Running the application
+
 You can build the app locally and run it as follows:
 
 ```shell
@@ -19,6 +21,18 @@ Alternatively, you may like to run it as follows in development:
 
 ```shell
 $ echo "A quick brown fox" | lein do clean, run -vf config.edn
+```
+
+
+### REPL based development
+
+The following may be often helpful when working at the REPL:
+
+```clojure
+(require 'dev)
+(dev/init)    ; initialize the app (also reload config files)
+(dev/deinit)  ; de-initialize the app
+(dev/reinit)  ; reload modified namespaces and re-initialize the app
 ```
 
 
