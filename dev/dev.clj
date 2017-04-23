@@ -33,3 +33,15 @@
     (bract-dev/deinit)
     (ctnr/refresh :after 'dev/init)  ; refresh namespace and then call 'init'
     (bract-echo/echo (format "Re-initialized app in %dms" (- (System/currentTimeMillis) start-millis)))))
+
+
+(defn start
+  "Launch app using configured launcher inducer."
+  []
+  (bract-dev/start))
+
+
+(defn stop
+  "Stop the started app using configured stopper."
+  []
+  (bract-dev/stop))
