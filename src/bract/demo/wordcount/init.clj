@@ -18,4 +18,5 @@
   [context]
   (let [config     (config/ctx-bract-cfg  context)
         stop-words (config/cfg-stop-words config)]
-    (core/print-word-count stop-words)))
+    (core/print-word-count stop-words))
+  context)
