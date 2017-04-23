@@ -29,10 +29,10 @@
 (defn reinit
   "Re-initialize app"
   []
-  (let [start-millis (System/currentTimeMillis)]
+  (bract-echo/with-latency-capture "Re-initializing app"
     (bract-dev/deinit)
-    (ctnr/refresh :after 'dev/init)  ; refresh namespace and then call 'init'
-    (bract-echo/echo (format "Re-initialized app in %dms" (- (System/currentTimeMillis) start-millis)))))
+    ;; refresh namespace and then call 'init'
+    (ctnr/refresh :after 'dev/init)))
 
 
 (defn start
