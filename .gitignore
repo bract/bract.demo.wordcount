@@ -9,8 +9,9 @@ pom.xml.asc
 /.nrepl-port
 .hgignore
 .hg/
-.classpath
-.project
-.settings
-.nightlight*
+/.classpath
+/.project
+/.settings
+/.nightlight*
+/.lein-repl-history
 
