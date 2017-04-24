@@ -14,7 +14,7 @@ You can build the app locally and run it as follows:
 
 ```shell
 $ lein do clean, uberjar
-$ echo "A quick brown fox" | java -jar target/uberjar/bract.demo.wordcount-0.1.0-SNAPSHOT-standalone.jar -vf config.edn
+$ echo "A quick brown fox" | java -jar target/uberjar/bract.demo.wordcount-0.1.0-standalone.jar -vf config.edn
 ```
 
 Alternatively, you may like to run it as follows in development:
@@ -33,6 +33,7 @@ The following may be often helpful when working at the REPL:
 (dev/init)    ; initialize the app (also reload config files)
 (dev/deinit)  ; de-initialize the app
 (dev/reinit)  ; reload modified namespaces and re-initialize the app
+(dev/start)   ; run the app reading input from STDIN
 ```
 
 
