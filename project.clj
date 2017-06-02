@@ -15,5 +15,5 @@
   :target-path "target/%s"
   :profiles {:dev {:dependencies [[org.clojure/tools.namespace "0.2.11"]]
                    :source-paths ["dev"]}
-             :uberjar {:aot [bract.core.main]}})
+             :uberjar {:aot [bract.cli.main]}})
 
