@@ -12,7 +12,7 @@
     [bract.core.dev :as dev]))
 
 
-(defonce config nil)
+(defonce config (format "Var %s/config not initialized" *ns*))
 
 
 (defn update-config!
