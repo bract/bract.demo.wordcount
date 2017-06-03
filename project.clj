@@ -11,8 +11,8 @@
   :dependencies [[org.clojure/clojure "1.8.0"]
                  [bract/bract.core "0.2.0-SNAPSHOT"]
                  [bract/bract.cli  "0.2.0-SNAPSHOT"]]
-  :main ^:skip-aot bract.cli.main
   :target-path "target/%s"
-  :profiles {:dev {:dependencies [[org.clojure/tools.namespace "0.2.11"]]
+  :profiles {:dev {:dependencies [[bract/bract.dev "0.2.0-SNAPSHOT"]]
                    :source-paths ["dev"]}
-             :uberjar {:aot [bract.cli.main]}})
+             :uberjar {:aot [bract.cli.main]
+                       :main ^:skip-aot bract.cli.main}})
