@@ -14,26 +14,21 @@ You can build the app locally and run it as follows:
 
 ```shell
 $ lein do clean, uberjar
-$ echo "A quick brown fox" | java -jar target/uberjar/bract.demo.wordcount-0.1.0-standalone.jar -vf config.edn
-```
-
-Alternatively, you may like to run it as follows in development:
-
-```shell
-$ echo "A quick brown fox" | lein do clean, run -vf config.edn
+$ echo "A quick brown fox" | java -jar target/uberjar/bract.demo.wordcount-0.2.0-standalone.jar -f config.edn
 ```
 
 
 ### REPL based development
 
-The following may be often helpful when working at the REPL:
+The `dev/user.clj` file is loaded when you run `lein repl` where the following may be helpful:
 
 ```clojure
-(require 'dev)
-(dev/init)    ; initialize the app (also reload config files)
-(dev/deinit)  ; de-initialize the app
-(dev/reinit)  ; reload modified namespaces and re-initialize the app
-(dev/start)   ; run the app reading input from STDIN
+(go)       ; stop app if running, then reload namespaces and reinit
+(reset)    ; same as (go)
+(start)    ; start the application
+(stop)     ; stop app if running, leaving it still initialized
+(restart)  ; stop app if running, reload namespaces, reinitialize and start up
+(verbose true) ; enable verbose mode
 ```
 
 
