@@ -1,18 +1,14 @@
 # TODO and Change Log
 
 
-## [WIP] 0.2.0 / 2017-June-??
-
+## 0.2.0 / 2017-June-04
 ### Changed
-- Upgrade to `[bract.core "0.2.0"]`
-  - [TODO] Use the GA version before release
+- Use `[bract.core "0.2.0"]`
 - Use `[bract.cli "0.2.0"]`
-  - [TODO] Use the GA version before release
 - Use `[bract.dev "0.2.0"]` for REPL-based dev workflow
 
 
 ## 0.1.0 / 2017-April-25
-
 ### Added
 - Implement word count
 - Exclude configured stop words
