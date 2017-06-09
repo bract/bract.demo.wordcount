@@ -4,4 +4,3 @@
                         bract.core.inducer/invoke-launcher  ; launch app
                         ]
  "bract.core.config-hook" bract.demo.wordcount.test-init/update-config!}
-
