@@ -1,0 +1,5 @@
+{"parent.config.filenames" ["config/config.edn"]
+ "dev-inducers"            [(bract.core.inducer/config-hook     ; record the config
+                              bract.demo.wordcount.test-init/update-config!)
+                            bract.core.dev/record-context!      ; record the app context
+                            ]}
