@@ -1,4 +1,9 @@
-# wordcount TODO and Change Log
+# demo.wordcount Change Log
+
+
+## [WIP] 0.3.1 / 2017-June-??
+- [TODO] Use Bract 0.3.1 components
+- [TODO] Rename repo to `demo.wordcount`
 
 
 ## 0.3.0 / 2017-June-11
