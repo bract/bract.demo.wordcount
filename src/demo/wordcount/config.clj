@@ -7,17 +7,11 @@
 ;   You must not remove this notice, or any other, from this software.
 
 
-(ns bract.demo.wordcount.test-init
+(ns demo.wordcount.config
   (:require
-    [bract.core.dev :as dev]))
+    [keypin.core :as keypin]))
 
 
-(defonce config (format "Var %s/config not initialized" *ns*))
-
-
-(defn update-config!
-  [app-config]
-  (alter-var-root #'config (fn [_] app-config)))
-
-
-(dev/init-once!)
+(keypin/defkey
+  ctx-bract-cfg  [:bract.core/config map? "Config read by Bract"]
+  cfg-stop-words ["stop-words" (every-pred vector? (partial every? string?)) "Vector of stop words"])

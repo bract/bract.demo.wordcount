@@ -7,7 +7,7 @@
 ;   You must not remove this notice, or any other, from this software.
 
 
-(ns bract.demo.wordcount.core
+(ns demo.wordcount.core
   (:require
     [clojure.string :as string])
   (:import

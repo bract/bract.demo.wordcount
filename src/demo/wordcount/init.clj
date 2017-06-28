@@ -7,10 +7,10 @@
 ;   You must not remove this notice, or any other, from this software.
 
 
-(ns bract.demo.wordcount.init
+(ns demo.wordcount.init
   (:require
-    [bract.demo.wordcount.core   :as core]
-    [bract.demo.wordcount.config :as config]))
+    [demo.wordcount.core   :as core]
+    [demo.wordcount.config :as config]))
 
 
 (defn start
