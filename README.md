@@ -14,7 +14,7 @@ You can build the app locally and run it as follows:
 
 ```shell
 $ lein do clean, uberjar
-$ echo "A quick brown fox" | java -jar target/uberjar/demo.wordcount-0.3.1-SNAPSHOT-standalone.jar -f config.edn
+$ echo "A quick brown fox" | java -jar target/uberjar/demo.wordcount-0.3.1-standalone.jar -f config.edn
 ```
 
 
