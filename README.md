@@ -1,4 +1,4 @@
-# bract.demo.wordcount
+# demo.wordcount
 
 A minimal demo command-line app for the Bract framework. The problem statement this app solves is as follows:
 
@@ -14,7 +14,7 @@ You can build the app locally and run it as follows:
 
 ```shell
 $ lein do clean, uberjar
-$ echo "A quick brown fox" | java -jar target/uberjar/bract.demo.wordcount-0.3.0-standalone.jar -f config.edn
+$ echo "A quick brown fox" | java -jar target/uberjar/demo.wordcount-0.3.1-SNAPSHOT-standalone.jar -f config.edn
 ```
 
 

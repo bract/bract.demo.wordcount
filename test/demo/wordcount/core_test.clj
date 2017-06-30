@@ -7,13 +7,13 @@
 ;   You must not remove this notice, or any other, from this software.
 
 
-(ns bract.demo.wordcount.core-test
+(ns demo.wordcount.core-test
   (:require
     [clojure.test :refer :all]
     [clojure.string :as string]
-    [bract.demo.wordcount.core :as core]
-    [bract.demo.wordcount.config :as config]
-    [bract.demo.wordcount.test-init :as ti]))
+    [demo.wordcount.core :as core]
+    [demo.wordcount.config :as config]
+    [demo.wordcount.test-init :as ti]))
 
 
 (def sample-text ["A quick brown fox jumped over the lazy dog."

@@ -3,5 +3,5 @@
                         bract.core.inducer/invoke-launcher  ; launch app
                         ]
  "dev-inducers"        []  ; no-op by default
- "bract.core.launcher" bract.demo.wordcount.init/start
+ "bract.core.launcher" demo.wordcount.init/start
  "stop-words" ["A" "a" "An" "an" "The" "the"]}
