@@ -7,7 +7,7 @@
 ;   You must not remove this notice, or any other, from this software.
 
 
-(ns demo.wordcount.config
+(ns demo.wordcount.keydef
   (:require
     [keypin.core :as keypin]))
 

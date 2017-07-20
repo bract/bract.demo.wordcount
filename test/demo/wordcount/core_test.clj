@@ -12,7 +12,7 @@
     [clojure.test :refer :all]
     [clojure.string :as string]
     [demo.wordcount.core :as core]
-    [demo.wordcount.config :as config]
+    [demo.wordcount.keydef :as kdef]
     [demo.wordcount.test-init :as ti]))
 
 
@@ -31,6 +31,6 @@
 
 (deftest test-with-config
   (testing "Simple words"
-    (let [stop-words (config/cfg-stop-words ti/config)]
+    (let [stop-words (kdef/cfg-stop-words ti/config)]
       (is (= {:word-count 16 :stop-word-count 3}
             (core/get-word-count sample-text (set stop-words)))))))
