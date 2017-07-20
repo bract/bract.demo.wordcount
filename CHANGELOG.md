@@ -5,6 +5,7 @@
 
 - Use Bract 0.4.0
   - [TODO] Use the GA version of Bract 0.4.0
+- Rename namespace `demo.wordcount.config` to `demo.wordcount.keydef`
 
 
 ## 0.3.1 / 2017-June-30
