@@ -12,6 +12,9 @@
     [keypin.core :as keypin]))
 
 
-(keypin/defkey
-  ctx-bract-cfg  [:bract.core/config map? "Config read by Bract"]
+(keypin/defkey  ; context
+  ctx-bract-cfg  [:bract.core/config map? "Config read by Bract"])
+
+
+(keypin/defkey  ; config
   cfg-stop-words ["stop-words" (every-pred vector? (partial every? string?)) "Vector of stop words"])
