@@ -10,13 +10,13 @@
 (ns demo.wordcount.init
   (:require
     [demo.wordcount.core   :as core]
-    [demo.wordcount.config :as config]))
+    [demo.wordcount.keydef :as kdef]))
 
 
 (defn start
   "Entry point for Bract to call."
   [context]
-  (let [config     (config/ctx-bract-cfg  context)
-        stop-words (config/cfg-stop-words config)]
+  (let [config     (kdef/ctx-bract-cfg  context)
+        stop-words (kdef/cfg-stop-words config)]
     (core/print-word-count stop-words))
   context)

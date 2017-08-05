@@ -9,15 +9,7 @@
 
 (ns demo.wordcount.test-init
   (:require
-    [bract.core.dev :as dev]))
+    [bract.core.dev :as bc-dev]))
 
 
-(defonce config (format "Var %s/config not initialized" *ns*))
-
-
-(defn update-config!
-  [app-config]
-  (alter-var-root #'config (fn [_] app-config)))
-
-
-(dev/init-once!)
+(bc-dev/ensure-init)

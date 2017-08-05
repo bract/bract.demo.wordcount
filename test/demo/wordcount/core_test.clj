@@ -10,10 +10,12 @@
 (ns demo.wordcount.core-test
   (:require
     [clojure.test :refer :all]
-    [clojure.string :as string]
-    [demo.wordcount.core :as core]
-    [demo.wordcount.config :as config]
-    [demo.wordcount.test-init :as ti]))
+    [clojure.string        :as string]
+    [bract.core.keydef     :as bc-kdef]
+    [bract.core.dev        :as bc-dev]
+    [demo.wordcount.core   :as core]
+    [demo.wordcount.keydef :as kdef]
+    [demo.wordcount.test-init]))
 
 
 (def sample-text ["A quick brown fox jumped over the lazy dog."
@@ -31,6 +33,8 @@
 
 (deftest test-with-config
   (testing "Simple words"
-    (let [stop-words (config/cfg-stop-words ti/config)]
+    (let [;; initialized context is available at bract.core.dev/app-context
+          config     (bc-kdef/ctx-config bc-dev/app-context)  ; get config from the context
+          stop-words (kdef/cfg-stop-words config)]
       (is (= {:word-count 16 :stop-word-count 3}
             (core/get-word-count sample-text (set stop-words)))))))
