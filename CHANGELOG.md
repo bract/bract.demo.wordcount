@@ -1,7 +1,7 @@
 # demo.wordcount Change Log
 
 
-## [WIP] 0.4.0 / 2017-August-??
+## 0.4.0 / 2017-August-05
 
 - Use Bract 0.4.0
 - Rename namespace `demo.wordcount.config` to `demo.wordcount.keydef`
