@@ -1,9 +1,11 @@
 # demo.wordcount Change Log
 
 
-## [WIP] 0.4.1 / 2017-August-??
+## 0.4.1 / 2017-August-08
 
 - Use Bract 0.4.1
+- Add `resources/baseconfig.edn` to estalish a base application config
+  - Config files `config/config.edn` and `config/config.dev.edn` derive from it
 
 
 ## 0.4.0 / 2017-August-05
