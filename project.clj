@@ -9,9 +9,9 @@
   :min-lein-version "2.7.1"
   :pedantic? :abort
   :dependencies [[org.clojure/clojure "1.8.0"]
-                 [bract/bract.cli     "0.4.1"]]
+                 [bract/bract.cli     "0.5.0-SNAPSHOT"]]
   :target-path "target/%s"
-  :profiles {:dev {:dependencies [[bract/bract.dev "0.4.1"]]
+  :profiles {:dev {:dependencies [[bract/bract.dev "0.5.0-SNAPSHOT"]]
                    :source-paths ["dev"]}
              :uberjar {:aot [bract.cli.main]
                        :main ^:skip-aot bract.cli.main}})
