@@ -14,7 +14,7 @@ You can build the app locally and run it as follows:
 
 ```shell
 $ lein do clean, uberjar
-$ echo "A quick brown fox" | java -jar target/uberjar/demo.wordcount-0.4.1-standalone.jar -f config.edn
+$ echo "A quick brown fox" | java -jar target/uberjar/demo.wordcount-0.5.0-SNAPSHOT-standalone.jar -f config/config.edn
 ```
 
 
@@ -35,7 +35,7 @@ The `dev/user.clj` file is loaded when you run `lein repl` where the following m
 
 ## License
 
-Copyright © 2017 Shantanu Kumar (kumar.shantanu@gmail.com, shantanu.kumar@concur.com)
+Copyright © 2017-2018 Shantanu Kumar (kumar.shantanu@gmail.com, shantanu.kumar@concur.com)
 
 Distributed under the Eclipse Public License either version 1.0 or (at
 your option) any later version.
