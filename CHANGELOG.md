@@ -3,8 +3,7 @@
 
 ## [WIP] 0.5.0 / 2018-February-??
 
-- Use `bract.cli` 0.5.0 (implicitly `bract.core` 0.5.0)
-- Use `bract.dev` 0.5.0
+- Use Bract 0.5.0
 - Use Clojure 1.9.0
 
 
