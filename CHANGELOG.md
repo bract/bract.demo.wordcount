@@ -1,6 +1,12 @@
 # demo.wordcount Change Log
 
 
+## [WIP] 0.5.0 / 2018-February-??
+
+- Use Bract 0.5.0
+- Use Clojure 1.9.0
+
+
 ## 0.4.1 / 2017-August-08
 
 - Use Bract 0.4.1
