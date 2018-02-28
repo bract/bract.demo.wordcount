@@ -15,7 +15,7 @@
     [bract.core.dev        :as bc-dev]
     [demo.wordcount.core   :as core]
     [demo.wordcount.keydef :as kdef]
-    [demo.wordcount.test-init]))
+    [bract.core.dev-init]))
 
 
 (def sample-text ["A quick brown fox jumped over the lazy dog."
