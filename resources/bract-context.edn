@@ -1,0 +1,6 @@
+{"parent.filenames"   ["bract/cli/context.edn"]
+ :bract.core/inducers [(bract.core.inducer/run-context-inducers  ; defined in bract.cli
+                         :app/cfg-inducers)
+                       (bract.core.inducer/run-context-inducers  ; defined in bract.core
+                         :app/dev-inducers)]
+ :bract.core/launcher demo.wordcount.init/start}
