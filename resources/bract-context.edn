@@ -1,6 +1,13 @@
-{"parent.filenames"   ["bract/cli/context.edn"]
- :bract.core/inducers [(bract.core.inducer/run-context-inducers  ; defined in bract.cli
-                         :app/cfg-inducers)
+{;;
+ ;; demo.wordcount app context
+ ;;
+ :bract.core/inducers [(bract.core.inducer/run-context-inducers
+                         :app/cli-inducers)
                        (bract.core.inducer/run-context-inducers  ; defined in bract.core
                          :app/dev-inducers)]
+ :app/cli-inducers    [bract.cli.inducer/parse-args
+                       bract.core.inducer/read-config
+                       bract.core.inducer/set-verbosity
+                       bract.cli.inducer/execute-command]
+ :app/dev-inducers    []
  :bract.core/launcher demo.wordcount.init/start}
