@@ -1,10 +1,10 @@
 {;;
  ;; demo.wordcount app context
  ;;
- :bract.core/inducers [(bract.core.inducer/run-context-inducers
-                         :app/cli-inducers)
-                       (bract.core.inducer/run-context-inducers  ; defined in bract.core
-                         :app/dev-inducers)]
+ :bract.cli/config-required? true                ; require config for the application
+ :bract.core/config-files    ["baseconfig.edn"]  ; fall back to baseconfig.edn (in classpath) for config
+ :bract.core/inducers [(bract.core.inducer/run-context-inducers :app/cli-inducers)
+                       (bract.core.inducer/run-context-inducers :app/dev-inducers)]
  :app/cli-inducers    [bract.cli.inducer/parse-args
                        bract.core.inducer/read-config
                        bract.core.inducer/set-verbosity
