@@ -10,4 +10,4 @@
                        bract.core.inducer/set-verbosity
                        bract.cli.inducer/execute-command]
  :app/dev-inducers    []
- :bract.core/launcher demo.wordcount.init/start}
+ :bract.core/launchers [demo.wordcount.init/start]}
