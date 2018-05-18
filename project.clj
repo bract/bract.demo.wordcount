@@ -1,4 +1,4 @@
-(defproject bract/demo.wordcount "0.5.1"
+(defproject bract/demo.wordcount "0.6.0-SNAPSHOT"
   :description "Bract sample application for counting words in a text"
   :url "https://github.com/bract/demo.wordcount"
   :license {:name "Eclipse Public License"
@@ -9,10 +9,11 @@
   :min-lein-version "2.7.1"
   :pedantic? :warn
   :dependencies [[org.clojure/clojure "1.9.0"]
-                 [bract/bract.cli     "0.5.1"]]
+                 [bract/bract.cli     "0.6.0-0.1.0"]]
   :target-path "target/%s"
-  :profiles {:dev {:dependencies [[bract/bract.dev "0.5.1"]]
+  :profiles {:dev {:dependencies [[bract/bract.dev "0.6.0-0.1.0"]]
                    :source-paths ["dev"]}
-             :uberjar {:aot [bract.cli.main]
-                       :main ^:skip-aot bract.cli.main
+             :uberjar {:aot [bract.core.main]
+                       :main ^:skip-aot bract.core.main
                        :pedantic? :abort}})
+

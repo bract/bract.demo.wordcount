@@ -1,6 +1,15 @@
 # demo.wordcount Change Log
 
 
+## [WIP] 0.6.0 / 2018-May-??
+
+- Use Bract 0.6.0
+  - Use `bract.core.main` as entrypoint (main class)
+  - Define context entries in `bract-context.edn` and `bract-context.dev.edn`
+  - Remove inducer and launcher entries from `baseconfig.edn` and config files
+  - Require config, falling back to included `baseconfig.edn` if config file is unspecified
+
+
 ## 0.5.1 / 2018-March-05
 
 - Use Bract 0.5.1
