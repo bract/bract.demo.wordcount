@@ -1,6 +1,11 @@
 # demo.wordcount Change Log
 
 
+## [WIP] 0.6.1 / 2018-October-??
+
+- Use Bract to 0.6.1
+
+
 ## 0.6.0 / 2018-May-18
 
 - Use Bract 0.6.0
