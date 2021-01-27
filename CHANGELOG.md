@@ -3,7 +3,7 @@
 
 ## [WIP] 0.6.2 / 2021-January-??
 
-- [Todo] Use Bract 0.6.2
+- Use Bract 0.6.2
 - Use Clojure 1.10.2
 
 
