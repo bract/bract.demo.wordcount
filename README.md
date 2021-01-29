@@ -20,16 +20,10 @@ $ echo "A quick brown fox" | java -jar target/uberjar/demo.wordcount-0.6.2-SNAPS
 
 ### REPL based development
 
-The `dev/user.clj` file is loaded when you run `lein repl` where the following may be helpful:
+Run `lein do clean, repl` to launch the REPL:
 
 ```clojure
-(go)       ; stop app if running, then reload namespaces and reinit
-(reset)    ; same as (go)
-(start)    ; start the application
-(stop)     ; stop app if running, leaving it still initialized
-(restart)  ; stop app if running, reload namespaces, reinitialize and start up
-(verbose true) ; enable verbose mode
-(config-files "config/config.qa.edn") ; switch config file
+bract.dev.repl=> (help)  ; shows the help screen
 ```
 
 
