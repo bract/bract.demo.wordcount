@@ -12,7 +12,8 @@
                  [bract/bract.cli     "0.6.2-0.1.1-beta2"]]
   :target-path "target/%s"
   :profiles {:dev {:dependencies [[bract/bract.dev "0.6.2-0.2.0-beta2" :exclusions [bract/bract.core]]]
-                   :source-paths ["dev"]
+                   :repl-options {:init-ns bract.dev.repl
+                                  :port 3001}
                    :main ^:skip-aot bract.core.dev}
              :uberjar {:aot [bract.core.main]
                        :main ^:skip-aot bract.core.main
