@@ -5,6 +5,8 @@
 
 - Use Bract 0.6.2
 - Use Clojure 1.10.2
+- Drop `dev` files for REPL support
+- Use `bract.core.dev` as main entrypoint in DEV
 
 
 ## 0.6.1 / 2018-October-10
