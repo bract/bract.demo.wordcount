@@ -9,6 +9,8 @@
   - Use port 3001 for nREPL
   - Drop `dev` files
 - Use `bract.core.dev` as main entrypoint in DEV
+- Process CLI args in DEV mode just as main mode
+  - Remove `:app/cli-inducers` override in `test/bract-context.dev.edn`
 
 
 ## 0.6.1 / 2018-October-10
