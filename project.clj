@@ -9,9 +9,9 @@
   :min-lein-version "2.7.1"
   :pedantic? :warn
   :dependencies [[org.clojure/clojure "1.10.2"]
-                 [bract/bract.cli     "0.6.2-0.1.1-beta5"]]
+                 [bract/bract.cli     "0.6.2-0.1.1-beta6"]]
   :target-path "target/%s"
-  :profiles {:dev {:dependencies [[bract/bract.dev "0.6.2-0.2.0-beta5"]]
+  :profiles {:dev {:dependencies [[bract/bract.dev "0.6.2-0.2.0-beta6"]]
                    :repl-options {:init-ns bract.dev.repl
                                   :port 3001}
                    :main ^:skip-aot bract.core.dev}
