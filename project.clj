@@ -1,4 +1,4 @@
-(defproject bract/demo.wordcount "0.6.2-SNAPSHOT"
+(defproject bract/demo.wordcount "0.6.2"
   :description "Bract sample application for counting words in a text"
   :url "https://github.com/bract/demo.wordcount"
   :license {:name "Eclipse Public License"

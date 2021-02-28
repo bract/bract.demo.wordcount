@@ -14,9 +14,8 @@ You can build the app locally and run it as follows:
 
 ```shell
 $ lein do clean, uberjar
-$ echo "A quick brown fox" | java -jar target/uberjar/demo.wordcount-0.6.2-SNAPSHOT-standalone.jar -f config/config.edn
+$ echo "A quick brown fox" | java -jar target/uberjar/demo.wordcount-0.6.2-standalone.jar -f config/config.edn
 ```
-
 
 ### REPL based development
 
@@ -25,6 +24,10 @@ Run `lein do clean, repl` to launch the REPL:
 ```clojure
 bract.dev.repl=> (help)  ; shows the help screen
 ```
+
+### Running tests
+
+Run tests using `lein do clean, test` command.
 
 
 ## License
