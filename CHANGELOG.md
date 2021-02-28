@@ -1,9 +1,21 @@
 # demo.wordcount Change Log
 
 
+## [WIP] 0.6.2 / 2021-January-??
+
+- Use Bract 0.6.2
+- Use Clojure 1.10.2
+- Use `bract.dev.repl` for REPL support
+  - Use port 3001 for nREPL
+  - Drop `dev` files
+- Use `bract.core.dev` as main entrypoint in DEV
+- Process CLI args in DEV mode just as main mode
+  - Remove `:app/cli-inducers` override in `test/bract-context.dev.edn`
+
+
 ## 0.6.1 / 2018-October-10
 
-- Use Bract to 0.6.1
+- Use Bract 0.6.1
 
 
 ## 0.6.0 / 2018-May-18
